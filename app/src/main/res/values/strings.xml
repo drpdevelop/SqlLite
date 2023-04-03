@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SQL Lite</string>
+    <string name="cedula">Cedula: </string>
+    <string name="hint_cedula">Ingrese cedula </string>
+    <string name="name">Nombre: </string>
+    <string name="hint_name">Ingrese nombre </string>
+    <string name="number">Telefono:</string>
+    <string name="hint_number">Ingrese telefono</string>
+    <string name="button_text">Crear cuenta</string>
+    <string name="search">Consultar</string>
+    <string name="hint_search">Ingrese cedula a consultar</string>
+
+</resources>

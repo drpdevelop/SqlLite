@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/cedula"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:hint="@string/hint_cedula"
+                    android:background="@drawable/input_rounded"
+                    android:id="@+id/cedula"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/name"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_rounded"
+                    android:hint="@string/hint_name"
+                    android:id="@+id/name"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/number"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:hint="@string/hint_number"
+                    android:background="@drawable/input_rounded"
+                    android:id="@+id/numero"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="17dp"
+                android:text="@string/button_text"
+                android:id="@+id/register"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20mm"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/cedula"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:hint="@string/hint_search"
+                    android:background="@drawable/input_rounded"
+                    android:id="@+id/edt_consultar"
+                    />
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="17dp"
+                android:text="@string/search"
+                android:id="@+id/consultar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20mm"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/name"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_rounded"
+                    android:id="@+id/result_cedula"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/number"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_rounded"
+                    android:id="@+id/result_num"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
